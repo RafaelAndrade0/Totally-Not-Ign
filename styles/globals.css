@@ -1,0 +1,25 @@
+.section_title h1 {
+  display: inline-block;
+  border-bottom: 3px solid #d22f32;
+  vertical-align: top;
+}
+.card-title {
+  background-color: #d22f32;
+  padding: 10px 15px;
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+.card-img-overlay {
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #c00000;
+  height: 1px;
+}

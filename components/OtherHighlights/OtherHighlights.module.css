@@ -1,0 +1,12 @@
+.card_no_border {
+  border: 0;
+  cursor: pointer;
+}
+
+.card_no_border:hover img {
+  filter: brightness(110%);
+}
+
+.card_no_border:hover h6 {
+  color: rgb(180, 0, 0);
+}
