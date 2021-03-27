@@ -64,7 +64,7 @@ const News = ({ articles }) => {
           </div>
           <div className="col-md-4">
             <div className="section_title">
-              <h1>Last Reviews</h1>
+              <h1>Latest Reviews</h1>
             </div>
             <Reviews />
           </div>
