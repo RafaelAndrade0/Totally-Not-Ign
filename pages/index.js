@@ -23,11 +23,9 @@ export const getStaticProps = async () => {
   const data = await response.json();
 
   const topHeadlines = await fetch(
-    `https://newsapi.org/v2/top-headlines?q=nintendo&apiKey=${process.env.API_KEY}`
+    `https://newsapi.org/v2/top-headlines?sources=ign&apiKey=${process.env.API_KEY}`
   );
   const dataTopHeadlines = await topHeadlines.json();
-
-  console.log(dataTopHeadlines);
 
   return {
     props: { news: data, topHeadlines: dataTopHeadlines }, // will be passed to the page component as props

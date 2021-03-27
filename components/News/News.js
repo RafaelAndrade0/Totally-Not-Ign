@@ -1,4 +1,5 @@
 import Reviews from "../Reviews/Reviews";
+import Image from "next/image";
 
 const News = ({ articles }) => {
   return (
@@ -11,10 +12,13 @@ const News = ({ articles }) => {
             </div>
             <div className="row">
               <div className="col-md-4 order-md-2">
-                <img
+                <Image
                   src={articles[0].urlToImage}
                   className="rounded img-fluid"
                   alt="..."
+                  height="120"
+                  width="200"
+                  layout="responsive"
                 />
               </div>
 
@@ -25,10 +29,13 @@ const News = ({ articles }) => {
             </div>
             <div className="row">
               <div className="col-md-4 order-md-2">
-                <img
+                <Image
                   src={articles[1].urlToImage}
                   className="rounded img-fluid"
                   alt="..."
+                  height="120"
+                  width="200"
+                  layout="responsive"
                 />
               </div>
 
@@ -39,10 +46,13 @@ const News = ({ articles }) => {
             </div>
             <div className="row">
               <div className="col-md-4 order-md-2">
-                <img
+                <Image
                   src={articles[4].urlToImage}
                   className="rounded img-fluid"
                   alt="..."
+                  height="120"
+                  width="200"
+                  layout="responsive"
                 />
               </div>
 

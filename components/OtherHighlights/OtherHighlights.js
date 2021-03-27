@@ -1,4 +1,5 @@
 import styles from "./OtherHighlights.module.css";
+import Image from "next/image";
 
 const OtherHighlights = ({ otherHeadlines }) => {
   return (
@@ -10,10 +11,13 @@ const OtherHighlights = ({ otherHeadlines }) => {
         <div className="card-deck">
           <div className={`card ${styles.card_no_border}`}>
             <div>
-              <img
+              <Image
                 src={otherHeadlines[0].urlToImage}
-                className="card-img"
                 alt="..."
+                className="card-img"
+                height="180"
+                width="300"
+                layout="responsive"
               />
             </div>
             <div className="card-body">
@@ -22,10 +26,13 @@ const OtherHighlights = ({ otherHeadlines }) => {
           </div>
           <div className={`card ${styles.card_no_border}`}>
             <div>
-              <img
+              <Image
                 src={otherHeadlines[1].urlToImage}
-                className="card-img"
                 alt="..."
+                className="card-img"
+                height="180"
+                width="300"
+                layout="responsive"
               />
             </div>
             <div className="card-body">
@@ -34,10 +41,13 @@ const OtherHighlights = ({ otherHeadlines }) => {
           </div>
           <div className={`card ${styles.card_no_border}`}>
             <div>
-              <img
+              <Image
                 src={otherHeadlines[2].urlToImage}
-                className="card-img"
                 alt="..."
+                className="card-img"
+                height="180"
+                width="300"
+                layout="responsive"
               />
             </div>
             <div className="card-body">
